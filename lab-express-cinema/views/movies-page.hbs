@@ -1,0 +1,22 @@
+<h2>Movies List</h2>
+
+<h2>Click on the movie to check the showtimes!</h2>
+
+
+<ul>
+    {{#each moviesArray}}
+    <li>
+
+        <img src="{{this.image}}" alt="">
+        <h3>{{this.title}}</h3>
+        <h3>{{this.director}}</h3>
+        <h3>{{this.description}}</h3>
+        <h3>{{this.showtimes}}</h3>
+        <a href="/movies/{{this.id}}">See more</a>
+        <!--
+<p> by {{this.author}}</p> -->
+
+    </li>
+    {{/each}}
+</ul>
+
